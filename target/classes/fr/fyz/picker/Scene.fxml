@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane cacheShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.fyz.picker.Controller">
+   <children>
+      <ColorPicker fx:id="picker" layoutX="260.0" layoutY="337.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#changeColor" promptText="Color Picker" scaleX="1.5" scaleY="1.5">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Glow />
+         </effect>
+      </ColorPicker>
+      <Slider fx:id="blue_slide" blockIncrement="1.0" layoutX="354.0" layoutY="140.0" max="255.0" onMouseClicked="#updateSlideBlue" onMouseDragged="#updateSlideBlue" onMouseEntered="#updateSlideBlue" onMouseExited="#updateSlideBlue" onMouseMoved="#updateSlideBlue" orientation="VERTICAL" value="255.0" />
+      <Slider fx:id="green_slide" blockIncrement="1.0" layoutX="293.0" layoutY="140.0" max="255.0" onMouseClicked="#updateSlideGreen" onMouseDragged="#updateSlideGreen" onMouseEntered="#updateSlideGreen" onMouseExited="#updateSlideGreen" onMouseMoved="#updateSlideGreen" orientation="VERTICAL" value="255.0" />
+      <Slider fx:id="red_slide" blockIncrement="1.0" layoutX="234.0" layoutY="140.0" max="255.0" onMouseClicked="#updateSlideRed" onMouseDragged="#updateSlideRed" onMouseEntered="#updateSlideRed" onMouseExited="#updateSlideRed" onMouseMoved="#updateSlideRed" orientation="VERTICAL" value="255.0" />
+      <Label layoutX="217.0" layoutY="115.0" text="Rouge" textFill="RED">
+         <font>
+            <Font name="Carlito" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="115.0" text="Vert" textFill="#02ff00">
+         <font>
+            <Font name="Carlito" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="343.0" layoutY="115.0" text="Bleu" textFill="#0009ff">
+         <font>
+            <Font name="Carlito" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="red" layoutX="236.0" layoutY="287.0" text="255" textAlignment="CENTER">
+         <font>
+            <Font name="Carlito" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="green" layoutX="295.0" layoutY="287.0" text="255" textAlignment="CENTER">
+         <font>
+            <Font name="Carlito" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="blue" layoutX="355.0" layoutY="287.0" text="255" textAlignment="CENTER">
+         <font>
+            <Font name="Carlito" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="36.0" text="DMX512 Console color picker">
+         <font>
+            <Font name="Noto Serif Georgian Regular" size="27.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="257.0" layoutY="26.0" text="A Fyz Project" textFill="#8a8a8a">
+         <effect>
+            <Bloom threshold="0.57" />
+         </effect>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
